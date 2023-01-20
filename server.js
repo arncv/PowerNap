@@ -22,8 +22,8 @@ app.listen(3000, () => {
 
 
 async function send_message() {
-      const message = "It's time to wake up from your quick nap! We hope you found the nap refreshing and energizing. Remember that taking short naps throughout the day can improve your focus, productivity, and overall well-being.      Don't forget to stretch, get some water, and maybe even do a quick exercise before diving back into work."
-      console.log("notification sent!")
+      const message = process.env.MESSAGE;
+      console.log("Notification Successfully sent!")
 
     const courier_options = {
         method: 'POST',

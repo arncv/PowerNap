@@ -18,7 +18,7 @@ body {
     display: grid;
     place-items: center;
     font-family: "Lato", sans-serif;
-    color: #4400ff
+    color: #8f30fc
 }
 
 img {
@@ -69,7 +69,7 @@ svg {
 }
 
 .pomodoro-progress-bar {
-    stroke: #0008ff;
+    stroke: #7e20f9;
     stroke-width: 1rem;
     stroke-linecap: round
 }

@@ -319,5 +319,9 @@ document
   .querySelector('.progress-container')
   .addEventListener('click', setProgress);
 
+// load song
+loadSong();
+
+
 
   
