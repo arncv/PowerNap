@@ -35,14 +35,16 @@ async function send_message() {
         body: JSON.stringify({
           "message": {
             "to": {
-              "email": process.env.EMAIL,            },
+              "email": process.env.EMAIL,
+              "phone_number": process.env.PHONENUMBER
+            },
             "content": {
               "title": "Time to Wake Up!",
               "body": message
             },
             "routing": {
               "method": "all",
-              "channels": ["email"]
+              "channels": ["sms","email"]
             },
           }
         })

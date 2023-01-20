@@ -79,7 +79,7 @@ const switchMode = newMode => {
 
 const resetClock = () => {
   timer.pomodoro = 1500;
-  timer.shortBreak = 10;
+  timer.shortBreak = 300;
   timer.longBreak = 900;
   controlBtn.removeAttribute('disabled', '');
   const pomodoroProgressBar = document.querySelector('.pomodoro-progress-bar');
