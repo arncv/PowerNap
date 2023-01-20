@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yet Another Pomodoro Timer </title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/8e7b84f57c.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <ul class="pomodoro-menu">
+      <li><button type="button" class="active" data-mode="pomodoro">Pomodoro</button></li>
+      <li><button type="button" data-mode="shortBreak">Short Break</button></li>
+      <li><button type="button" data-mode="longBreak">Long Break</button></li>
+    </ul>
+  </nav>
+  <div class="pomodoro-container">
+    <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="150" cy="150" r="150" fill="none" class="pomodoro-progress-container" />
+      <circle cx="150" cy="150" r="135" fill="none" class="pomodoro-progress-bar" />
+    </svg>
+    <p class="clock">25:00</p>
+    <button type="button" id="control" data-action="start">Start</button>
+    <audio src="" id="notification"></audio>
+  </div>
+  <div class="music-container">
+    <div class="music-info">
+      <p class="song-title">Spirit Blossom</p>
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
+    </div>
+    <audio src="assets/music/spirit-blossom.mp3" id="audio"></audio>
+    <div class="img-container">
+      <img src="assets/images/spirit-blossom.jpg" alt="music cover" id="cover" width="110" height="110">
+    </div>
+    <div class="navigation">
+      <button id="prev" type="button" class="btn"><i class="fas fa-backward"></i></button>
+      <button id="play" type="button" class="btn btn-big"><i class="fas fa-play"></i></button>
+      <button id="next" type="button" class="btn"><i class="fas fa-forward"></i></button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
